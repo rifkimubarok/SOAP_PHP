@@ -1,9 +1,9 @@
 <?php
 error_reporting(1);
-require_once("src/nusoap.php");
-$nama_zodiak = 'libra';
+require_once("../src/nusoap.php");
+$nama_zodiak = 'Sagitarius';
 
-$wsdl = "http://localhost/webservice/server.php?wsdl";
+$wsdl = "http://localhost/webservice/soap/server.php?wsdl";
 $client = new nusoap_client($wsdl,'wsdl');
 $param = ["nama_zodiak"=>$nama_zodiak];
 $response = $client->call('RamalanZodiak',$param);

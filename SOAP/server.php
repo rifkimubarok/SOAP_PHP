@@ -1,6 +1,6 @@
 <?php
 error_reporting(1);
-require_once("src/nusoap.php");
+require_once("../src/nusoap.php");
 $ns = "http://localhost/";
 $server = new soap_server;
 $server->configureWSDL('RamalanZodiak',$ns);
@@ -20,7 +20,7 @@ function RamalanZodiak($nama_zodiak)
         return new soap_fault('Database Sever','','Koneksi ke database gagal!.','');
     }
     
-    $result = $db->query("select * from ramalan");
+    $result = $db->query("select * from ramalan where nama_zodiak = '$nama_zodiak'");
     if($result->num_rows > 0){
         $data = "";
         while ($row = $result->fetch_object()) {

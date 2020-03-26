@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="webservice" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="webservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="webservice">
+      <s:element name="helloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="helloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="helloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tambah">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TambahResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TambahResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Kurang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KurangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KurangResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kali">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kaliResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kaliResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bagi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bagiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bagiResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="helloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:helloWorld" />
+  </wsdl:message>
+  <wsdl:message name="helloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:helloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="TambahSoapIn">
+    <wsdl:part name="parameters" element="tns:Tambah" />
+  </wsdl:message>
+  <wsdl:message name="TambahSoapOut">
+    <wsdl:part name="parameters" element="tns:TambahResponse" />
+  </wsdl:message>
+  <wsdl:message name="KurangSoapIn">
+    <wsdl:part name="parameters" element="tns:Kurang" />
+  </wsdl:message>
+  <wsdl:message name="KurangSoapOut">
+    <wsdl:part name="parameters" element="tns:KurangResponse" />
+  </wsdl:message>
+  <wsdl:message name="kaliSoapIn">
+    <wsdl:part name="parameters" element="tns:kali" />
+  </wsdl:message>
+  <wsdl:message name="kaliSoapOut">
+    <wsdl:part name="parameters" element="tns:kaliResponse" />
+  </wsdl:message>
+  <wsdl:message name="bagiSoapIn">
+    <wsdl:part name="parameters" element="tns:bagi" />
+  </wsdl:message>
+  <wsdl:message name="bagiSoapOut">
+    <wsdl:part name="parameters" element="tns:bagiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="webserviceSoap">
+    <wsdl:operation name="helloWorld">
+      <wsdl:input message="tns:helloWorldSoapIn" />
+      <wsdl:output message="tns:helloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tambah">
+      <wsdl:input message="tns:TambahSoapIn" />
+      <wsdl:output message="tns:TambahSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Kurang">
+      <wsdl:input message="tns:KurangSoapIn" />
+      <wsdl:output message="tns:KurangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="kali">
+      <wsdl:input message="tns:kaliSoapIn" />
+      <wsdl:output message="tns:kaliSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bagi">
+      <wsdl:input message="tns:bagiSoapIn" />
+      <wsdl:output message="tns:bagiSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="webserviceSoap" type="tns:webserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="helloWorld">
+      <soap:operation soapAction="webservice/helloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tambah">
+      <soap:operation soapAction="webservice/Tambah" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kurang">
+      <soap:operation soapAction="webservice/Kurang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kali">
+      <soap:operation soapAction="webservice/kali" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bagi">
+      <soap:operation soapAction="webservice/bagi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="webserviceSoap12" type="tns:webserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="helloWorld">
+      <soap12:operation soapAction="webservice/helloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tambah">
+      <soap12:operation soapAction="webservice/Tambah" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kurang">
+      <soap12:operation soapAction="webservice/Kurang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kali">
+      <soap12:operation soapAction="webservice/kali" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bagi">
+      <soap12:operation soapAction="webservice/bagi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="webservice">
+    <wsdl:port name="webserviceSoap" binding="tns:webserviceSoap">
+      <soap:address location="http://localhost:49780/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="webserviceSoap12" binding="tns:webserviceSoap12">
+      <soap12:address location="http://localhost:49780/webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
