@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{759FD595-56AA-4C54-90EC-0647056F3135}|">
+  <MonoDevelop.Ide.ItemProperties.web__service.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="web_service/webservice.asmx.cs">
+    <Files>
+      <File FileName="web_service/webservice.asmx" Line="1" Column="59" />
+      <File FileName="web_service/webservice.asmx.cs" Line="8" Column="56" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="web_service" expanded="True">
+            <Node name="web_service" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.web__service PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

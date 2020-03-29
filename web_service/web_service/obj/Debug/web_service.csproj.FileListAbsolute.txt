@@ -1,0 +1,4 @@
+/Users/rifkimubarok/Projects/web_service/web_service/bin/web_service.dll
+/Users/rifkimubarok/Projects/web_service/web_service/bin/web_service.pdb
+/Users/rifkimubarok/Projects/web_service/web_service/obj/Debug/web_service.dll
+/Users/rifkimubarok/Projects/web_service/web_service/obj/Debug/web_service.pdb

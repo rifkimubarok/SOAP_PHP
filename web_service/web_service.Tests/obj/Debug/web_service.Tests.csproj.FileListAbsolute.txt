@@ -1,0 +1,10 @@
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/bin/Debug/web_service.Tests.dll
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/bin/Debug/web_service.Tests.pdb
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/bin/Debug/nunit.framework.dll
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/bin/Debug/web_service.dll
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/bin/Debug/web_service.pdb
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/bin/Debug/nunit.framework.xml
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/obj/Debug/web_service.Tests.csprojAssemblyReference.cache
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/obj/Debug/web_service.Tests.csproj.CopyComplete
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/obj/Debug/web_service.Tests.dll
+/Users/rifkimubarok/Projects/web_service/web_service.Tests/obj/Debug/web_service.Tests.pdb
